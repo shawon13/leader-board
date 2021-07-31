@@ -1,7 +1,32 @@
-/* Top player and Top Blog */
-.top_players{
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f1ff;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 870px;
+    background-color: #ffffff;
+    padding: 30px;
+}
+/* Top player and Top Blog Start*/
+.section_title{
+    font-size: 24px;
+    line-height: 34px;
+    color: #562EFF;
+    font-weight: 500;
+    margin-top: 0px;
+}
+.players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
 }
 .player{
     display: flex;
@@ -11,3 +36,33 @@
     width: 56px;
     height: 56px;
 }
+.player_name{
+    margin-left: 16px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+    font-weight: 500;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 21px;
+}
+.blog_items{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap:20px ;
+}
+.blog_item{
+    display: flex;
+    align-items: center;
+}
+.blog_img img{
+    Width :177px;
+    Height :117px;
+}
+.blog_author a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #9F9F9F;
+}
+/* Top player and Top Blog End */
